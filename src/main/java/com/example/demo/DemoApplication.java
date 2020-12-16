@@ -16,16 +16,16 @@ public class DemoApplication {
 	}
 
 
-//	@Bean
-//	public CommandLineRunner demo(DepartmentRepository departmentRepository) {
-//		return (args -> {
-//			departmentRepository.save(new DepartmentEntity("Financiar"));
-//			departmentRepository.save(new DepartmentEntity("Contabilitate"));
-//			departmentRepository.save(new DepartmentEntity("Administrativ"));
-//			departmentRepository.save(new DepartmentEntity("Galvanizare"));
-//			departmentRepository.save(new DepartmentEntity("Injectie"));
-//			departmentRepository.save(new DepartmentEntity("WasteWaterTreatment"));
-//
-//		});
-//	}
+	@Bean
+	public CommandLineRunner demo(DepartmentRepository departmentRepository) {
+		return (args -> {
+			departmentRepository.save(new DepartmentEntity("Financiar"));
+			departmentRepository.save(new DepartmentEntity("Contabilitate"));
+			departmentRepository.save(new DepartmentEntity("Administrativ"));
+			departmentRepository.save(new DepartmentEntity("Galvanizare"));
+			departmentRepository.save(new DepartmentEntity("Injectie"));
+			departmentRepository.save(new DepartmentEntity("WasteWaterTreatment"));
+
+		});
+	}
 }
